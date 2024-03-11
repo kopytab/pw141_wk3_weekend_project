@@ -20,6 +20,7 @@ class ROI_calc():
     def run(self):
         self.cc_roi_calc
         print(f'Your Cash on Cash Return on Investment is {self.cc_roi}%')
+        return self.cc_roi
 
 
 duplex = ROI_calc(2000, 1610, 50000)
