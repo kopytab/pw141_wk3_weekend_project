@@ -1,6 +1,9 @@
 class ROI_calc():
-
-    def __init__(self, tmi, tme, total_investment):
+    
+    def __init__(self):
+        tmi = int(input('What is your total montly income? '))
+        tme = int(input('What is your total montly expenses? '))
+        total_investment = int(input('What is your total investment in the property? '))
         self.tmi = tmi
         self.tme = tme
         self.cash_flow = tmi - tme
@@ -18,11 +21,14 @@ class ROI_calc():
         return self.roi
     
     def run(self):
+        self.tmi
+        self.tme
+        self.total_investment
         self.cc_roi_calc
         print(f'Your Cash on Cash Return on Investment is {self.cc_roi}%')
         return self.cc_roi
 
 
-duplex = ROI_calc(2000, 1610, 50000)
+duplex = ROI_calc()
 
 duplex.run()
